@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="zh" style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <title>Demo: Network Visualization with PIXI.js</title>
+    <meta name="description" content="">
+    <meta name="theme-color" content="#000000">
+    <style type="text/css">
+        /*tooltip style*/
+        #paper-info {
+            border: 1px solid black;
+            font-size: 1em;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .info-div {
+            margin-bottom: 5px;
+        }
+
+        .info-title {
+            font-weight: bold;
+            margin: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.2/browser/pixi.js"></script>
+    <!-- canvas -->
+    <div id="canvas_container" style="width: 80%;height: 800px">
+        <canvas id="demo" style="position: absolute; display: block;width: 100%"></canvas>
+    </div>
+    <!-- tooltip -->
+    <div id="paper-info" style="display: none; position: absolute; width: 25%; max-height: 80%; z-index: 100; right: 10px; top: 10px; background-color: #ffffff">
+        <div class="info-div info-title"></div>
+        <div class="info-div info-author"><span class="info-author-data"></span></div>
+        <div class="info-div info-year"></div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./index2.js"></script>
+    
+</body>
+
+</html>
